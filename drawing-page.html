@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>drawing game</title>
+    <!-- 
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    -->
+    <!-- 
+    <script src="cursor.js"></script>
+    -->
+
+    <style>
+
+    
+        body {
+            background-color: #000000; 
+            color: #ffffff; 
+            font-family: monospace
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        pre {
+            text-align: center;
+            color:rgb(78, 239, 118)
+        }
+
+        .canvas-container {
+            text-align: center;
+            /* Add any additional styling you need here, but avoid styles that could interfere with the canvas */
+        }
+
+        canvas {
+            display: block; /* Makes it a block-level element */
+            margin: 0 auto; /* Auto margins on left and right */
+            border: 1px solid rgb(78, 239, 118); /* Your existing border */
+        }
+
+        button {
+            display: block; /* Makes it a block-level element */
+            margin: 20px auto; /* Auto margins on left and right */
+        }
+
+        #caption-container {
+            color: #333;           /* Text color */
+            background-color: #fff;/* Background color */
+            border: 1px solid #ddd;/* Border around the div */
+            padding: 10px;         /* Space inside the div */
+            margin-top: 10px;      /* Space outside the div */
+            text-align: center;    /* Center the text */
+            max-width: 800px;      /* Maximum width of the div */
+            margin-left: auto;     /* Align the div in the center */
+            margin-right: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+    <pre>
+
+        ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄           
+        ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          
+        ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀█░█▀▀▀▀      ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          
+        ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌          ▐░▌          
+        ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌     ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌          
+        ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░▌          ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          
+        ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀█░█▀▀      ▐░▌          ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          
+        ▐░▌          ▐░▌       ▐░▌▐░▌     ▐░▌       ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌          ▐░▌▐░▌          ▐░▌          
+        ▐░▌          ▐░▌       ▐░▌▐░▌      ▐░▌      ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌ ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ 
+        ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌          ▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+         ▀            ▀         ▀  ▀         ▀       ▀            ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+                                                                                                                                  
+                        
+    </pre>
+
+    
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script src="drawing-game.js"></script>
+    <button id="doneButton">Done</button>
+    
+
+    <!--
+    <div class="canvas-container">
+        <canvas id="myCanvas" width="1000" height="600"></canvas>
+        <button id="doneButton">interpret my artwork</button>
+    </div>
+    -->
+    
+    <div id="caption-container"></div>
+
+
+
+</body>
+</html>
