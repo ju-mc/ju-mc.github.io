@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
 
-    // Function to draw a line between two points
+    // function to draw a line between two points
     function drawLine(ctx, startPos, endPos) {
         ctx.beginPath();
         ctx.moveTo(startPos.x, startPos.y);
         ctx.lineTo(endPos.x, endPos.y);
-        ctx.strokeStyle = 'white'; // Change color as needed
-        ctx.lineWidth = 5;         // Change line width as needed
+        ctx.strokeStyle = 'white'; 
+        ctx.lineWidth = 5;         
         ctx.stroke();
     }
 
-    // Mouse event handlers
+    // mouse event handlers
     canvas.addEventListener('mousedown', function(e) {
         drawing = true;
         oldMousePos = getMousePos(canvas, e);
@@ -42,16 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // 'Done' button event handler
+    // done button event handler
     document.getElementById('doneButton').addEventListener('click', function() {
         saveCanvas();
     });
 
-    // Function to save the canvas content
+    // function to save the canvas content
     function saveCanvas() {
         var imageData = canvas.toDataURL('image/png');
 
-        // Sending the image data to the server
+        // sending the image data to the server
         fetch('/process-drawing', {
             method: 'POST',
             headers: {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            // Process the response here, e.g., display the generated text
+            
         })
         .catch(error => {
             console.error('Error:', error);
