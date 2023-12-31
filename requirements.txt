@@ -1,0 +1,182 @@
+aiodns==3.0.0
+aiohttp==3.8.3
+aiohttp-socks==0.7.1
+aiosignal==1.3.1
+annotated-types==0.6.0
+anyio==3.6.1
+appnope==0.1.3
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+arrow==1.2.2
+asteval==0.9.27
+asttokens==2.2.1
+async-timeout==4.0.2
+attrs==22.2.0
+backcall==0.2.0
+beautifulsoup4==4.11.1
+binaryornot==0.4.4
+bleach==6.0.0
+Brotli @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_01vdzesc6m/croots/recipe/brotli-split_1659616063272/work
+cachetools==5.2.0
+cchardet==2.1.7
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_3cotsv2wp9/croot/certifi_1700501675943/work/certifi
+cffi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_44mvycfmuf/croot/cffi_1700254431144/work
+chardet==5.0.0
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.1.3
+colorama==0.4.5
+comm==0.1.2
+conda==4.11.0
+conda-package-handling @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_99vcqjo8cf/croot/conda-package-handling_1690999935230/work
+conda_package_streaming @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d5wg6eonuu/croot/conda-package-streaming_1690987980119/work
+cookiecutter==2.1.1
+cryptography @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_85yzbl_qze/croot/cryptography_1702070288916/work
+cycler==0.11.0
+dataclasses-json==0.6.1
+debugpy==1.6.6
+decorator==5.1.1
+defusedxml==0.7.1
+dill==0.3.5.1
+distlib==0.3.8
+elastic-transport==8.4.0
+elasticsearch==8.5.3
+executing==1.2.0
+fake-useragent==1.1.1
+fastjsonschema==2.16.3
+filelock==3.13.1
+fonttools==4.34.4
+fqdn==1.5.1
+frozenlist==1.3.3
+geographiclib==2.0
+geopy==2.3.0
+glcontext==2.3.6
+googletransx==2.4.2
+greenlet==3.0.1
+idna @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_00jf0h4zbt/croot/idna_1666125573348/work
+importlib-metadata==6.0.0
+importlib-resources==5.10.2
+ipykernel==6.21.3
+ipython==8.11.0
+ipython-genutils==0.2.0
+ipywidgets==8.0.4
+isoduration==20.11.0
+jedi==0.18.2
+Jinja2==3.1.2
+jinja2-time==0.2.0
+Js2Py==0.71
+jsonpatch==1.33
+jsonpointer==2.3
+jsonschema==4.17.3
+jupyter==1.0.0
+jupyter-console==6.6.3
+jupyter-events==0.6.3
+jupyter_client==8.0.3
+jupyter_core==5.2.0
+jupyter_server==2.4.0
+jupyter_server_terminals==0.4.4
+jupyterlab-pygments==0.2.2
+jupyterlab-widgets==3.0.5
+kiwisolver==1.4.4
+langchain==0.0.327
+langsmith==0.0.56
+MarkupSafe==2.1.1
+marshmallow==3.20.1
+matplotlib==3.5.2
+matplotlib-inline==0.1.6
+mistune==2.0.5
+moderngl==5.6.4
+multidict==6.0.4
+multiprocess==0.70.13
+mypy-extensions==1.0.0
+nbclassic==0.5.3
+nbclient==0.7.2
+nbconvert==7.2.9
+nbformat==5.7.3
+nest-asyncio==1.5.6
+notebook==6.5.3
+notebook_shim==0.2.2
+numpy==1.23.1
+openai==0.28.1
+packaging==21.3
+pandas==1.5.2
+pandocfilters==1.5.0
+parso==0.8.3
+penkit==0.0.8
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.2.0
+pipenv==2022.8.5
+platformdirs==2.6.2
+pnoise==0.2.0
+prometheus-client==0.16.0
+prompt-toolkit==3.0.38
+psutil==5.9.4
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pycares==4.3.0
+pycosat @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_09anpuxx5u/croot/pycosat_1696536514697/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydantic==2.4.2
+pydantic_core==2.10.1
+Pygments==2.14.0
+pyjsparser==2.7.1
+pyOpenSSL @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_7fwdg30481/croot/pyopenssl_1690223429070/work
+pyparsing==3.0.9
+pyrsistent==0.19.3
+PySide2==5.15.2.1
+PySocks @ file:///opt/concourse/worker/volumes/live/112288ac-9cb0-4e73-768b-13baf4ca6419/volume/pysocks_1605305820043/work
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+python-json-logger==2.0.7
+python-slugify==6.1.2
+python-socks==2.1.1
+pytz==2022.7
+pytz-deprecation-shim==0.1.0.post0
+PyYAML==6.0
+pyzmq==25.0.0
+qasync==0.23.0
+qtconsole==5.4.0
+QtPy==2.3.0
+requests==2.28.1
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+ruamel-yaml-conda @ file:///opt/concourse/worker/volumes/live/e81cf0fe-611a-498e-6e69-a7320057c1ac/volume/ruamel_yaml_1616016689696/work
+schedule==1.1.0
+scipy==1.9.0
+Send2Trash==1.8.0
+Shapely==1.8.2
+shiboken2==5.15.2.1
+six==1.16.0
+sniffio==1.2.0
+soupsieve==2.3.2.post1
+SQLAlchemy==2.0.23
+stack-data==0.6.2
+svgelements==1.7.2
+svgwrite==1.4.3
+tenacity==8.2.3
+terminado==0.17.1
+text-unidecode==1.3
+tinycss2==1.2.1
+tomli==2.0.1
+tornado==6.2
+traitlets==5.9.0
+twint==2.1.20
+typing-inspect==0.9.0
+typing_extensions==4.8.0
+tzdata==2022.1
+tzlocal==4.2
+uri-template==1.2.0
+urllib3 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_62orwr3pr2/croot/urllib3_1698257564351/work
+virtualenv==20.16.3
+virtualenv-clone==0.5.7
+vpype @ git+https://github.com/abey79/vpype@6a099b7b4f3d756f7fa8052049be365d0314c5ee
+vsketch @ git+https://github.com/abey79/vsketch@495c8c8a01a22e7536d8da9eae39e03fa8b94950
+watchfiles==0.16.1
+wcwidth==0.2.6
+webcolors==1.12
+webencodings==0.5.1
+websocket-client==1.5.1
+widgetsnbextension==4.0.5
+yarl==1.8.2
+zipp==3.11.0
+zstandard @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_40ayfv1xn6/croot/zstandard_1677014126754/work
